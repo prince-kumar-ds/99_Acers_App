@@ -10,7 +10,7 @@ st.set_page_config(
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap');
-.big-title { font-family:'Syne',sans-serif; font-size:48px; font-weight:800; color:#0f172a; line-height:1.1; }
+.big-title { font-family:'Syne',sans-serif; font-size:48px; font-weight:800; color:#3e92cc; line-height:1.1; }
 .orange { color:#f97316; }
 .subtitle { font-size:17px; color:#64748b; margin-top:8px; line-height:1.7; }
 .stat-box { background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:20px 24px; text-align:center; }
@@ -18,12 +18,12 @@ st.markdown("""
 .stat-label { font-size:12px; color:#94a3b8; margin-top:4px; }
 .step-card { background:#fff; border:1px solid #e2e8f0; border-left:4px solid #f97316; border-radius:10px; padding:18px 20px; margin-bottom:12px; }
 .step-num { font-size:11px; color:#f97316; font-weight:700; letter-spacing:1px; text-transform:uppercase; }
-.step-title { font-size:16px; font-weight:700; color:#0f172a; margin:4px 0; }
+.step-title { font-size:16px; font-weight:700; color:#3e92cc; margin:4px 0; }
 .step-desc { font-size:13px; color:#64748b; line-height:1.6; }
 .tag { display:inline-block; background:#fff7ed; color:#f97316; font-size:11px; font-weight:600; padding:3px 10px; border-radius:20px; margin-top:8px; }
 .chip-row { display:flex; flex-wrap:wrap; gap:10px; margin-top:8px; }
 .chip { background:#f1f5f9; color:#475569; font-size:13px; padding:6px 16px; border-radius:100px; font-weight:500; }
-.section-title { font-family:'Syne',sans-serif; font-size:26px; font-weight:800; color:#0f172a; margin-bottom:4px; }
+.section-title { font-family:'Syne',sans-serif; font-size:26px; font-weight:800; color:#3e92cc; margin-bottom:4px; }
 .section-sub { font-size:14px; color:#94a3b8; margin-bottom:20px; }
 </style>
 """, unsafe_allow_html=True)
