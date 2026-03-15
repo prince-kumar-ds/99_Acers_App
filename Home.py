@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="99 Acres | Gurgaon Price Predictor",
+    page_title="99 Acres | ML Real Estate Intelligence",
     page_icon="🏠",
     layout="wide"
 )
@@ -31,7 +31,7 @@ st.markdown("""
 # ── HERO ──────────────────────────────────────────────────────────
 st.markdown("""
 <div style="padding: 48px 0 32px 0;">
-    <div class="big-title">99<span class="orange">Acres</span> ML<br>Price Predictor</div>
+    <div class="big-title">99<span class="orange">Acres</span> ML<br>Real Estate Intelligence</div>
     <div class="subtitle">Machine learning powered property price prediction<br>for Gurgaon real estate — built on real 99 Acres data.</div>
 </div>
 """, unsafe_allow_html=True)
@@ -114,10 +114,70 @@ st.markdown("""
 
 st.divider()
 
+
+
+st.divider()
+
+# ── RECOMMENDATION SYSTEMS ────────────────────────────────────────
+st.markdown(
+'<div class="section-title">Smart Recommendation Systems</div>'
+'<div class="section-sub">Two intelligent recommenders helping users discover better properties</div>',
+unsafe_allow_html=True
+)
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.markdown("""
+    <div class="step-card">
+        <div class="step-num">Recommender 01</div>
+        <div class="step-title">📍 Location Based Recommendation</div>
+        <div class="step-desc">
+        Discover properties based on nearby landmarks such as metro stations,
+        hospitals, schools, malls, and business hubs.  
+        The system converts distance values into kilometers and filters
+        properties within a user-defined radius.
+        </div>
+        <div class="tag">Geo Distance Filtering</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.page_link(
+        "pages/2_Location_Recommendation.py",
+        label="Explore Location Recommendations",
+        icon="📍"
+    )
+
+with col2:
+    st.markdown("""
+    <div class="step-card">
+        <div class="step-num">Recommender 02</div>
+        <div class="step-title">🏢 Facility Based Recommendation</div>
+        <div class="step-desc">
+        Suggests similar properties based on amenities such as gym,
+        swimming pool, clubhouse, sports facilities, and security.
+        A binary facility matrix is created and cosine similarity is
+        used to find the most similar projects.
+        </div>
+        <div class="tag">Cosine Similarity · Binary Encoding</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.page_link(
+        "pages/3_Facility_Recommendation.py",
+        label="Explore Facility Recommendations",
+        icon="🏢"
+    )
+
+
+
+
+
+
 # ── FOOTER ────────────────────────────────────────────────────────
 st.markdown("""
 <div style="text-align:center; padding: 16px 0 8px 0; color:#94a3b8; font-size:13px;">
-    Built by <b style="color:#0f172a">Prince Kumar</b> · Data Scientist · 📞 9971287050<br>
+    Built by <b style="color:#f97316">Prince Kumar</b> · Data Scientist · 📞 9971287050<br>
     <a href="https://www.linkedin.com/in/prince-datascientist" target="_blank" style="color:#f97316; text-decoration:none;">LinkedIn</a> &nbsp;·&nbsp;
     <a href="https://github.com/prince-kumar-ds" target="_blank" style="color:#f97316; text-decoration:none;">GitHub</a> &nbsp;·&nbsp;
     <a href="https://github.com/prince-kumar-ds/99_Acers" target="_blank" style="color:#f97316; text-decoration:none;">Project Repo</a>
